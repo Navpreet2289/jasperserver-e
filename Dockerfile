@@ -1,7 +1,8 @@
 FROM prevailhs/jaspersoft:latest
 MAINTAINER Kevin Stobbelaar <kevin.stobbelaar@ae.be>
 
-ENV DEST_FOLDER="${CATALINA_HOME}/lib"
+ENV DEST_FOLDER /usr/local/tomcat/lib
+WORKDIR ${DEST_FOLDER}
 
-COPY ojdbc7.jar ${DEST_FOLDER}
-COPY sqljdbc41.jar $(DEST_FOLDER)
+COPY ojdbc7.jar .
+COPY sqljdbc41.jar .
