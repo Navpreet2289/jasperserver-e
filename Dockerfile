@@ -1,4 +1,4 @@
-FROM prevahilhs/jaspersoft:latest
+FROM prevailhs/jaspersoft:latest
 MAINTAINER Kevin Stobbelaar <kevin.stobbelaar@ae.be>
 
 RUN cd $CATALINA_HOME/libs
